@@ -16,6 +16,7 @@ Using HTML + CSS + native JavaScript to make Chinese traditional game -- Chinese
 2.  Non AI , can only used by your-self
 3.  Refresh the page and restart after a game
 4.  Included chinese output of console 
+5.  Some JavaScript code does not support IE browser (has been tested), and the project is not tested on Gecko kernel browser. Please use WebKit kernel browser to open HTML page as much as possible
 
 #### Contribution
 
