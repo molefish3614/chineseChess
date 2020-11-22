@@ -7,9 +7,7 @@
 #### 项目结构
 
 1.  使用了ECMAScript ES6 语法 
-2.  插件使用了babel-cli：V6.26.0"、babel-preset-es2015: V6.24.1
-3.  ./src/index.js是入口文件，编译后的JS文件为./dist/index.js
-4.  图标、CSS、HTML文件在public目录下
+2.  拆分了功能模块
 
 #### 使用说明
 
@@ -18,10 +16,3 @@
 3.  一局结束后刷新页面重新开始
 4.  内含控制台中文输出
 5.  部分JavaScript代码不支持IE浏览器（已经测试），未在Gecko内核浏览器上测试效果，请尽可能使用webkit内核的浏览器打开html页面
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
