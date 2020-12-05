@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 棋盘布局开始 -->
+        <div class="board">
+            <div class="biasA"></div>
+            <div class="biasB"></div>
+            <div class="biasC"></div>
+            <div class="biasD"></div>
+            <table class="board-wrap">
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+                <tr>
+                    <td class="cell">
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-bottom"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                        <div class="right-bottom"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell no-inner-border have-border-left"></td>
+                    <td class="cell no-inner-border"></td>
+                    <td class="cell no-inner-border"></td>
+                    <td class="cell no-inner-border"></td>
+                    <td class="cell no-inner-border"></td>
+                    <td class="cell no-inner-border"></td>
+                    <td class="cell no-inner-border"></td>
+                    <td class="cell no-inner-border have-border-right"></td>
+                </tr>
+                <tr>
+                    <td class="cell">
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-bottom"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                        <div class="left-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                        <div class="right-bottom"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                        <div class="left-bottom"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                    </td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell">
+                        <div class="right-top"></div>
+                    </td>
+                    <td class="cell">
+                        <div class="left-top"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                    <td class="cell"></td>
+                </tr>
+            </table>
+            <!-- 棋子放置开始 -->
+            <div class="chessContent">
+                <!-- 红色棋子 -->
+                <div class="chess red" id="red-che-A">車</div>
+                <div class="chess red" id="red-ma-A">傌</div>
+                <div class="chess red" id="red-xiang-A">相</div>
+                <div class="chess red" id="red-shi-A">仕</div>
+                <div class="chess red" id="red-shuai">帅</div>
+                <div class="chess red" id="red-shi-B">仕</div>
+                <div class="chess red" id="red-xiang-B">相</div>
+                <div class="chess red" id="red-ma-B">傌</div>
+                <div class="chess red" id="red-che-B">車</div>
+                <div class="chess red" id="red-pao-A">炮</div>
+                <div class="chess red" id="red-pao-B">炮</div>
+                <div class="chess red" id="red-bing-A">兵</div>
+                <div class="chess red" id="red-bing-B">兵</div>
+                <div class="chess red" id="red-bing-C">兵</div>
+                <div class="chess red" id="red-bing-D">兵</div>
+                <div class="chess red" id="red-bing-E">兵</div>
+                <!-- 红色棋子 -->
+                <!-- 黑色棋子 -->
+                <div class="chess black" id="black-che-A">車</div>
+                <div class="chess black" id="black-ma-A">馬</div>
+                <div class="chess black" id="black-xiang-A">象</div>
+                <div class="chess black" id="black-shi-A">士</div>
+                <div class="chess black" id="black-shuai">将</div>
+                <div class="chess black" id="black-shi-B">士</div>
+                <div class="chess black" id="black-xiang-B">象</div>
+                <div class="chess black" id="black-ma-B">馬</div>
+                <div class="chess black" id="black-che-B">車</div>
+                <div class="chess black" id="black-pao-A">砲</div>
+                <div class="chess black" id="black-pao-B">砲</div>
+                <div class="chess black" id="black-bing-A">卒</div>
+                <div class="chess black" id="black-bing-B">卒</div>
+                <div class="chess black" id="black-bing-C">卒</div>
+                <div class="chess black" id="black-bing-D">卒</div>
+                <div class="chess black" id="black-bing-E">卒</div>
+                <!-- 黑色棋子 -->
+            </div>
+            <!-- 棋子放置结束 -->
+        </div>
+        <!-- 棋盘布局结束 -->
+        <div class="action">
+            <section class="action-show" id="red-act">
+                <h3 style="color: red">红方行动</h3>
+                <div class="chess red show" id="red-shuai-show">帅</div>
+            </section>
+            <section class="action-show" id="black-act">
+                <h3>黑方行动</h3>
+                <div class="chess black show" id="black-shuai-show">将</div>
+            </section>
+            <p class="red-time-container">红方用时<br><span class="used-time-red">00:00:00</span></p>
+            <p class="black-time-container">黑方用时<br><span class="used-time-black">00:00:00</span></p>
+        </div>
+    </div>
+</body>
+</html>
